@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+ /* Reset CSS */
+
+/* Zera as margens e preenchimentos em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Defina fonte e cor padrão para o corpo do documento */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Remova a formatação de lista de itens de lista não ordenados e ordenados */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remova a formatação de links sublinhados */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Remova a formatação padrão de cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  
+  /* Define uma largura padrão para as imagens */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Defina uma largura máxima para elementos de formulário */
+  input, textarea {
+    max-width: 100%;
+  }
+  
