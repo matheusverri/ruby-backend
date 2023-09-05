@@ -1,5 +1,9 @@
-Clonar repositório:
-git clone https://github.com/matheusverri/ruby-backend.git
+Criar o banco de dados:
+rake db:create
+rake db:migrate
 
-Iniciar docker compose:
-docker compose up
+Popular o banco de dados com os estados e cidades:
+rake db:seed
+
+Rodar os testes: 
+rspec
