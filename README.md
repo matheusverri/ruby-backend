@@ -1,24 +1,18 @@
-# README
+- Clonar repositório:
+  git clone https://github.com/matheusverri/ruby-backend.git
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Iniciar docker compose:
+  docker compose up
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Enquanto o docker compose estiver rodando, executar os comandos abaixo em OUTRA JANELA DO TERMINAL:
+  - docker compose exec web bash
+    
+  - Criar o banco de dados:
+    rake db:create
+    rake db:migrate
+  
+  - Popular o banco de dados com os estados e cidades:
+    rake db:seed
+  
+  Rodar os testes: 
+  rspec
